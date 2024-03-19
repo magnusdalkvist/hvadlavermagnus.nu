@@ -102,10 +102,9 @@ input:checked + .slider:before {
   display: none;
   background-image: none;
   border-radius: 0;
-  height: 300px;
-  width: 260px;
+  width: 300px;
+  aspect-ratio: 5088/3664;
   transition: background-image 200ms ease-out;
-  opacity: 100%;
   background-size: contain;
   filter: drop-shadow(0 0 10px black);
   transform: translate(10%, -50%);
@@ -348,7 +347,7 @@ section {
   animation: marquee 20s linear infinite;
 }
 .marquee:nth-child(even) div {
-  animation: marquee 20s linear -4s infinite;
+  animation: marquee 20s linear infinite reverse;
 }
 
 .marquee p,

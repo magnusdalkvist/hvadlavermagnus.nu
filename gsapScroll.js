@@ -19,7 +19,7 @@ gsap.from("header", {
   duration: 1,
 });
 
-gsap.from(".title", {
+gsap.from(".title .year", {
   opacity: 0,
   duration: 1.5,
   ease: "power3.in",

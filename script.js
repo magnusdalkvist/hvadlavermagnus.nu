@@ -157,7 +157,7 @@ if (device() == "desktop") {
   document.querySelectorAll(".marquee").forEach((e) => {
     e.addEventListener("mouseover", function (a) {
       cursorImage.style.display = "block";
-      cursorImage.style.backgroundImage = `url(images/${e.dataset.image}.png)`;
+      cursorImage.style.backgroundImage = `url(images/${e.dataset.image}.webp)`;
     });
     e.addEventListener("mouseleave", () => {
       resetCursor();
