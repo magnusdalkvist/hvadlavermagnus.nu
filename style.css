@@ -99,15 +99,17 @@ input:checked + .slider:before {
 }
 
 .cursorImage {
-  display: none;
+  display: block;
   background-image: none;
+  background-color: white;
   border-radius: 0;
   width: 300px;
   aspect-ratio: 5088/3664;
-  transition: background-image 200ms ease-out;
+  transition: opacity 200ms ease-out, background-image 200ms ease-out;
   background-size: contain;
   filter: drop-shadow(0 0 10px black);
   transform: translate(10%, -50%);
+  opacity: 0;
 }
 
 .hover {

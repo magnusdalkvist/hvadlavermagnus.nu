@@ -156,7 +156,7 @@ if (device() == "desktop") {
 
   document.querySelectorAll(".marquee").forEach((e) => {
     e.addEventListener("mouseover", function (a) {
-      cursorImage.style.display = "block";
+      cursorImage.style.opacity = "100%";
       cursorImage.style.backgroundImage = `url(images/${e.dataset.image}.webp)`;
     });
     e.addEventListener("mouseleave", () => {
@@ -165,8 +165,7 @@ if (device() == "desktop") {
   });
   function resetCursor() {
     cursor.style.display = "block";
-    cursorImage.style.display = "none";
-    cursorImage.style.backgroundImage = "none";
+    cursorImage.style.opacity = "0%";
     cursor.classList.remove("hover");
     cursor.classList.remove("cursorinnerhover");
   }
